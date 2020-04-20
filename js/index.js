@@ -15,12 +15,12 @@ function initMap() {
 }
 
 function searchStores() {
+  console.log("inside search stores");
   let foundStores = [];
   let zipCode = document.getElementById("zip-code-input").value;
   if (zipCode) {
     for (let store of stores) {
-      let postal = store.address.postalcode.substring(0, 5);
-      if (postal == zipCode) {
+      if (store.address.postalCode.includes(zipCode)) {
         foundStores.push(store);
       }
     }
@@ -57,6 +57,7 @@ function displayStores(foundStores) {
       <div class="store-container-background">
         <div class="store-info-container">
             <div class="store-address">
+                <strong><span>${store.name}</span></strong>
                 <span>${store.addressLines[0]}</span>
                 <span>${store.addressLines[1]}</span>
             </div>
