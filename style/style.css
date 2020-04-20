@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 100px;
+  left: 60px;
+  z-index: 100;
+}
+
+.search-container {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  background-color: #454e53;
+  z-index: 100;
+  top: 180px;
+  left: 60px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-container input {
+  flex-grow: 1;
+  /* grow as much as you can */
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search i {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.store-list-container {
+  position: absolute;
+  background: white;
+  width: 400px;
+  z-index: 100;
+  /* height: 300px; */
+  top: 230px;
+  left: 60px;
+  border-radius: 30px;
+  bottom: 20px;
+  display: flex;
+}
+
+.store-address {
+  font-size: 21px;
+  color: #514c4c;
+  margin-top: 30px;
+}
+
+.store-phone-number {
+  color: #b5adad;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.store-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  background-color: #454e53;
+  color: #b5adad;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.store-address span {
+  display: block;
+}
+
+.stores-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.store-container-background {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.store-info-container {
+  flex-grow: 1;
+}
+
+.store-number-container {
+  display: flex;
+  align-items: center;
+}
+
+.store-container {
+  border-bottom: 1px solid #979797;
+  cursor: pointer;
+}
+
+.store-info-address,
+.store-info-phone {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.store-info-address .circle,
+.store-info-phone .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #1985a1;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 8px;
+}
+
+.store-container-background:hover {
+  background-color: #ccc;
+}
