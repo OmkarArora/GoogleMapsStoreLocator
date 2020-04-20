@@ -15,7 +15,6 @@ function initMap() {
 }
 
 function searchStores() {
-  console.log("inside search stores");
   let foundStores = [];
   let zipCode = document.getElementById("zip-code-input").value;
   if (zipCode) {
